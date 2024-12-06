@@ -120,7 +120,7 @@ namex==0.0.7
 narwhals==1.15.2
 natsort==8.4.0
 networkx==3.2.1
-numpy==1.23.0  # Updated to satisfy chromadb
+numpy==1.23.0
 oauthlib==3.2.2
 omegaconf==1.4.1
 onnxruntime==1.16.3
