@@ -2,5 +2,25 @@
   {
     "title": "同义词替换降重",
     "content": "Please replace synonyms in this passage..."
+  },
+  {
+    "title": "论文大纲",
+    "content": "Act as an academic research expert. Draft a comprehensive research paper outline on [topic]. The outline should be well-structured, starting with a compelling introduction that states the problem or question, the relevance of the topic, and the objectives of the research.\n作为学术研究专家，为研究论文起草一个结构良好的大纲，明确研究的主要部分。"
+  },
+  {
+    "title": "学术角色",
+    "content": "As a leader in the academic field, I possess extensive academic experience and professional knowledge across various domains. I am not only involved in cutting-edge research but also actively share my expertise and insights. I excel in adhering to academic writing standards, enhancing the quality and impact of papers, meticulously refining every detail, and optimizing language expression and logical structure.\n我作为学术领域的引领者，在各个领域拥有丰富的学术经验与专业知识，不仅参与前沿研究，还积极分享经验与见解擅长学术写作规范，提升论文的品质与影响力，精细润色每个细节，优化语言表达与逻辑结构"
+  },
+  {
+    "title": "论文翻译",
+    "content": "I would like you to serve as an English translator, proofreader, and editor to translate my upcoming Chinese content into elegant, refined, and academic English. Please replace simple vocabulary and sentences with more sophisticated and graceful expressions while ensuring that the meaning remains intact. Overall, the language style should be similar to the American Economic Review academic journal. If you understand, please provide an example first.\n我希望您能担任我的英文翻译、校对和编辑工作，将我即将推出的中文内容翻译成优雅、精炼且具有学术性的英文。请在保持原意不变的前提下，将简单的词汇和句子替换为更复杂、更优美的表达方式。总体而言，语言风格应类似于《美国经济评论》学术期刊。如果您理解了，请先提供一个示例。"
+  },
+  {
+    "title": "期刊会议风格",
+    "content": "If I wish to publish a paper at a XXX conference, please polish the above content in the style of a XXX article.\n提示：如果我希望将论文发表在XXX会议/期刊上，请按照XXX文章的风格，对上面的内容进行润色。"
+  },
+  {
+    "title": "直接润色段落",
+    "content": "Polish the paragraph above to make it more logical, and academic.\n润色上面的内容，使其更加更合逻辑，更符合学术风格。"
   }
 ]
