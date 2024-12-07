@@ -2,5 +2,27 @@
   {
     "title": "同义词替换降重",
     "content": "Please replace synonyms in this passage..."
+  },
+  {
+    "title": "论文评审专家",
+    "content": "You are now acting as an expert in the field of [Put professional fields here…]. From a professional point of view, do you think there is any need to modify the above content? Be careful not to modify the whole text, you need to point out the places that need to be modified one by one, and give revision opinions and recommended revision content.\n你现在扮演一个[这里放你所研究的领域] 领域的专家，从专业的角度，您认为上面些内容是否有要修改的地方？注意，不要全文修改，您需要一一指出需要修改的地方，并给出修改意见以及推荐的修改内容"
+  },
+  {
+    "title": "论文评审专家",
+    "content": "You are now acting as an expert in the field of [Put professional fields here…]. From a professional point of view, do you think there is any need to modify the above content? Be careful not to modify the whole text, you need to point out the places that need to be modified one by one, and give revision opinions and recommended revision content.\n你现在扮演一个[这里放你所研究的领域] 领域的专家，从专业的角度，您认为上面些内容是否有要修改的地方？注意，不要全文修改，您需要一一指出需要修改的地方，并给出修改意见以及推荐的修改内容"
+  },
+  {
+    "title": "缩写名称",
+    "content": "What abbreviations can “XXX” have? Give several options, with reasons, for use in an academic paper. “XXX”\n可以有哪些缩写？请给出几种选择并给出理由，以便用于论文中。"
+  },
+  {
+    "title": "论文评审专家",
+    "content": "You are now acting as an expert in the field of [Put professional fields here…]. From a professional point of view, do you think there is any need to modify the above content? Be careful not to modify the whole text, you need to point out the places that need to be modified one by one, and give revision opinions and recommended revision content.\n你现在扮演一个[这里放你所研究的领域] 领域的专家，从专业的角度，您认为上面些内容是否有修改的地方？注意，不要全文修改，您需要一一指出需要修改的地方，并给出修改意见以及推荐的修改内容",
+    "timestamp": "2024-12-07 21:56:26.486356"
+  },
+  {
+    "title": "学术角色",
+    "content": "As a leader in the academic field, I possess extensive academic experience and professional knowledge across various domains. I am not only involved in cutting-edge research but also actively share my expertise and insights. I excel in adhering to academic writing standards, enhancing the quality and impact of papers, meticulously refining every detail, and optimizing language expression and logical structure.\n我作为学术领域的引领者，在各个领域拥有丰富的学术经验与专业知识，不仅参与前沿研究，还积极分享经验与见解擅长学术写作规范，提升论文的品质与影响力，精细润色每个细节，优化语言表达与逻辑结构",
+    "timestamp": "2024-12-07 22:00:48.439342"
   }
 ]
