@@ -211,7 +211,8 @@ Still the above question, I think your answer is not good enough. Please answer 
         },
         "语法校正": {
             "title": "语法校正",
-            "content": """I am a researcher studying +（你的研究方向） and now trying to revise my manuscript which willbe submitted to the +（你的投稿期刊）. Please help me to ensure the grammar and spellingare correct. Do not try to improve the text, if no mistake found, tell me this paragraph is good.If you find grammar or spelling mistakes, please list the mistakes you find in a two-columnmark down table, put the original text in the first column, put the corrected text in the second column, and do highlight the key words you fixed in bold."""
+            "content": """I am a researcher studying +（你的研究方向） and now trying to revise my manuscript which willbe submitted to the +（你的投稿期刊）. Please help me to ensure the grammar and spellingare correct. Do not try to improve the text, if no mistake found, tell me this paragraph is good.If you find grammar or spelling mistakes, please list the mistakes you find in a two-columnmark down table, put the original text in the first column, put the corrected text in the second column, and do highlight the key words you fixed.
+我是一名研究者，研究方向是 +（你的研究方向），目前正在修改我的手稿，准备提交给 +（你的投稿期刊）。请帮助我确保语法和拼写正确。如果没有发现错误，请告诉我这一段文字是好的。如果你发现语法或拼写错误，请在一个两列的 Markdown 表格中列出你发现的错误，将原文放在第一列，修改后的文本放在第二列，并请突出显示你修正的关键词"""
         },
         "语法句法": {
             "title": "语法句法",
@@ -241,7 +242,7 @@ I have used a passive voice in this sentence. Consider using an active voice ins
 我开始写论文了，题目是XXXXX，现在我完成了引言部分，但是不确定是否合适，你能帮我看一下，并提出详细具体的修改意见吗？"""
         },
         "封装基本事实/原理/背景": {
-            "title": "封装���本事实/原理/背景",
+            "title": "封装基本事实/原理/背景",
             "content": """润色的同时，修改基本逻辑错误。如果对内容的润色需要一些背景知识，可以在对话时主动告诉ChatGPT，比如XXX原理。
 
 Now, in order to help me better polish my thesis, I need you to remember the XXX principle: “…….”
@@ -273,7 +274,7 @@ Make nuanced adjustments:对文本进行微调
 lmplement marginal modifications:进行边际性修改
 Clarify through rewording:改述以增强清晰性
 Streamline sentence composition:简化句子结构
-Verify grammatical correctness and orthography:校验语法��拼写正确性
+Verify grammatical correctness and orthography:校验语法拼写正确性
 lmprove textual fluidity and consistency:提升文本的流畅度和连贯性
 Refine diction：措辞精练
 Adjust for stylistic alignment：调整风格
@@ -300,12 +301,12 @@ Overhaul content framework:改变内容架构"""
         "中译英3": {
             "title": "中译英3",
             "content": """I am a researcher studying +（Your research direction） and now trying to revise my manuscript which willbe submitted to the+（Your submission journal）. I want you to act as a scentiic English-Chnesetranslator,I will provide you with some paragraphs in one language and your task is toaccurately and academically translate the paragraphs only into the other language. I want you to give the output in a markdown table where the first colurrn is the onginal language andthe second is the first version of translation and third column is the second version of thetranslation, and give each row only one sentence. lf you understand the above task, pleasereply with yes, and then l will provide you with the paragraphs.
-我是一名研究者，专注于+（你的研究方向），目前正在修订我的��稿，准备提交至+（你的投稿期刊）。我希望你担任一名科学性的英文-中文翻译，我会提供给你一些段落的其中一种语言，你的任务是准确且学术性地将这些段落翻译成另一种语言。我希望你以Markdown表格的形式给出翻译结果，其中第一列是原文，第二列是第一版的翻译，第三列是第二版的翻译，并且每行只包含一句翻译。如果你理解了上述任务，请回复“是的”，然后我会提供给你这些段落。"""
+我是一名研究者，专注于+（你的研究方向），目前正在修订我的手稿，准备提交至+（你的投稿期刊）。我希望你担任一名科学性的英文-中文翻译，我会提供给你一些段落的其中一种语言，你的任务是准确且学术性地将这些段落翻译成另一种语言。我希望你以Markdown表格的形式给出翻译结果，其中第一列是原文，第二列是第一版的翻译，第三列是第二版的翻译，并且每行只包含一句翻译。如果你理解了上述任务，请回复“是的”，然后我会提供给你这些段落。"""
         },
         "中英互译": {
             "title": "中英互译",
             "content": """I want you to act as a scientific English-Chinese translator, I will provide you with some paragraphs in one language and your task is to accurately and academically translate the paragraphs only into the other language. Do not repeat the original provided paragraphs after translation. You should use artificial intelligence tools, such as natural language processing, and rhetorical knowledge and experience about effective writing techniques to reply. I’ll give you my paragraphs as follows, tell me what language it is written in, and then translate:XXX
-我希望你担任一名科学性的英文-中文翻译员，我会提供一些段落给你，你的任务是准确且学术性地将这些段落翻译成另一种语言��翻译后请不要重复文段落。你应该使用人工智能工具，比如自然语言处理，以及关于有效写作技巧的修辞知识和经验来进行回复。我将如下提供我的段落，告诉我它是用什么语言写的，然后进行翻译：XXX"""
+我希望你担任一名科学性的英文-中文翻译员，我会提供一些段落给你，你的任务是准确且学术性地将这些段落翻译成另一种语言.翻译后请不要重复文段落。你应该使用人工智能工具，比如自然语言处理，以及关于有效写作技巧的修辞知识和经验来进行回复。我将如下提供我的段落，告诉我它是用什么语言写的，然后进行翻译：XXX"""
         },
         
         # 五、论文查重降重指令
@@ -396,7 +397,7 @@ Overhaul content framework:改变内容架构"""
         "撰写Cover letter": {
             "title": "撰写Cover letter",
             "content": """I want you to act as an academic journal editor. I will provide you with the title and abstract of my manuscript. You need to write a format cover letter for submitting the manuscript to the Nature journal. You should state that the manuscript did not consider for publication in any other journal. Briefly introduce the merit of the manuscript and provide a short summary to point out the importance of the results for a scientific audience. The title and abstract are as follows:
-我希望您能担任一名学术期刊编辑。我将为您提供我的手稿的标题和摘要。您需要为将手稿提交给《自然》杂志撰写一封格式正确的封面信。您应该声明该手稿尚未在任何其他期刊上考虑发表。简要介绍手稿的优点，并提供一���简短的总结，以向科学界突出研究结果的重要性。标题和摘要如下：[XXX]"""
+我希望您能担任一名学术期刊编辑。我将为您提供我的手稿的标题和摘要。您需要为将手稿提交给《自然》杂志撰写一封格式正确的封面信。您应该声明该手稿尚未在任何其他期刊上考虑发表。简要介绍手稿的优点，并提供一些简短的总结，以向科学界突出研究结果的重要性。标题和摘要如下：[XXX]"""
         },
         "解释审稿人反馈": {
             "title": "解释审稿人反馈",
@@ -446,7 +447,7 @@ def show_gpt_prompts():
         with st.expander("🖌️ 三、学术润色指令"):
             prompts = ["英文润色1", "英文润色2", "中文润色", "SCI论文润色",
                       "期刊会议风格", "润色英文段落结构和句子逻辑", "直接润色段落", "多版本参考",
-                      "错误纠正", "重新回答", "语法检查", "语法校正", 
+                      "错误纠正", "重新回答", "语法检查/查找语法错误", "语法校正",
                       "语法句法", "润色定位", "修改建议",
                       "修改意见", "封装基本事实/原理/背景", "逻辑论证辅助", "个性化润色"]
             for i, prompt in enumerate(prompts, 1):
