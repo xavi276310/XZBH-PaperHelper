@@ -126,7 +126,7 @@ def get_prompts_content():
         "缩写名称": {
             "title": "缩写名称",
             "content": """What abbreviations can “XXX” have? Give several options, with reasons, for use in an academic paper. “XXX”
-可以有哪些缩写？请给出几���选择，并给出理由，以便用于论文中。"""
+可以有哪些缩写？请给出几种选择，并给出理由，以便用于论文中。"""
         },
         "论文续写": {
             "title": "论文续写",
