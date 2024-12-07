@@ -3,7 +3,6 @@
 import streamlit as st
 from utils.helpers import save_prompt, load_prompts
 import datetime
-import pyperclip
 
 # 自定义CSS样式
 def load_css():
@@ -102,14 +101,14 @@ def get_prompts_content():
         "论文评审专家": {
             "title": "论文评审专家",
             "content": """You are now acting as an expert in the field of [Put professional fields here…]. From a professional point of view, do you think there is any need to modify the above content? Be careful not to modify the whole text, you need to point out the places that need to be modified one by one, and give revision opinions and recommended revision content.
-你现在扮演一个[这里放你所研究的领域] 领域的专家，从专业的角度，您认为上面些内容是否有修改的地方？注意，不要全文修改，您需要一一指出需���修改的地方，并给出修改意见以及推荐的修改内容"""
+你现在扮演一个[这里放你所研究的领域] 领域的专家，从专业的角度，您认为上面些内容是否有修改的地方？注意，不要全文修改，您需要一一指出需要修改的地方，并给出修改意见以及推荐的修改内容"""
         },
         
         # 二、论文撰写指令
         "写标题": {
             "title": "写标题",
             "content": """I will provide you with the abstract and key words of a scientific paper in any language and you will detect the language and reply in the same language. Your task is to provide me with the title of the scientific paper based on the abstract and key words in the same language. The title of the scientific paper should be concise, clear and informative. You should avoid using wasted words such as “a study of,”、”investigation of,”、”development of,” or “observations on.” Make sure the title can grip the audience immediately. My abstract is “XXX”, my key words are “XXX”
-我将向你提供一篇任何语言的科学论文的摘要和关键词，你将检测该语言并以相同的语言进行回复。你的任务是根据摘要和关键词用相同的语言向我提供科学论文的标题。学论文的标题应该是简洁、明确和信息量的。你该免使用诸如研究、调查、发展或观察等词语。确保标题能够立即抓住听众的心。"""
+我将向你提供一篇任何语言的科学论文的摘要和关键词，你将检测该语言并以相同的语言进行回复。你的任务是根据摘要和关键词用相同的语言向我提供科学论文的标题。学论文的标题应该是简洁、明确和信息量的。你该免使用诸如研究、调查、发展或观察等词语。确保标题��够立即抓住听众的心。"""
         },
         "写英文标题": {
             "title": "写英文标题",
@@ -122,7 +121,7 @@ def get_prompts_content():
 作为学术研究专家，为研究论文撰写一个简洁、精的摘要。"""
         },
         "写英文摘要": {
-            "title": "写英文摘要",
+            "title": "写英��摘要",
             "content": """Please read through the uploaded manuscript and write an abstract in English for it. The abstract should initiate with a comprehensive summary of the broader context or background of the study, followed by a statement that describe the gaps, limitations or issues. Then, describe the research methods used in the manuscript. After that, write 3-5 sentences showing the key findings. In the end, include a statement which underscores the unique value or significant contribution of the manuscript. After generating the abstract, give explanation in Chinese checking if you have followed the instruction in a markdown table.
 请阅读上传的手稿，并为其撰写一份英文摘要。摘要应首先提供研究背景或更广泛背景的全面概述，接着陈述描述研究的空白、局限性或问题。然后，描述手稿中使用的研究方法。此后，写出3-5句话展示关键发现。最后，包括一份强调手稿独特价值或重大贡献的声明。在生成摘要后，以中文提供解释，检查你是否遵循了指令，并以Markdown表格形式展示。"""
         },
@@ -180,7 +179,7 @@ def get_prompts_content():
             "title": "润色英文段落结构和句子逻辑",
             "content": """I am a researcher studying +（你的研究方向） and now trying to revise my manuscript which willbe subrnitted to the +（你的投稿期刊）. want you to analyze the logic and coherence amongsentences within each paragraph in the following text, ldentify any areas where the flow orconnections between sentences could be improved,and provide specific suagestions toenhance the overall quality and readabllity to the content. Please only provide the text aftelimproving and then give a list of the improvements in Chinese. lf you understand the abovetask, please reply with yes, and then I will provide you with the text.
         
-我是一名研究人员，研究方向是 +（你的研究方向），目前正在尝试修改我的手稿，该手稿将提交到 +（你的投稿期刊）。我希望你分析每段文字中的逻辑性和连贯性，识别出句子之间的衔接部分是否有待改善，并提供具体的建议，以提升容的整体质量和可读性。仅提供修改后的文本，并给出改进的中文列表。如果你理解上述任务，请回复“是的”，然后我会提供文本。"""
+我是一名研究人员，研究方向是 +（你的研究方向），目前正在尝试修改我的手稿，该手稿将提交到 +（你的投稿期刊）。我希望你分析每段文字中的逻辑性和连贯性，识别出句子之间的衔接部分是否有待改善，并提供具体的建议，以提升容的整体质量和可读性��仅提供修改后的文本，并给出改进的中文列表。如果你理解上述任务，请回复“是的”，然后我会提供文本。"""
         },
         "直接润色段落": {
             "title": "直接润色段落",
@@ -289,7 +288,7 @@ Overhaul content framework:改变内容架构"""
         "论文翻译": {
             "title": "论文翻译",
             "content": """I would like you to serve as an English translator, proofreader, and editor to translate my upcoming Chinese content into elegant, refined, and academic English. Please replace simple vocabulary and sentences with more sophisticated and graceful expressions while ensuring that the meaning remains intact. Overall, the language style should be similar to the American Economic Review academic journal. If you understand, please provide an example first.
-我希望您能担任我的英文翻译、校对和编辑工作，将我即将推出的中文内容翻译成优雅、精炼且具有学术性的英文。请在保��原意不变的前提下，将简单的词汇和句子替换为更复杂、更优美的表达方式。总体而言，语言风格应类似于《美国经济评论》学术期刊。如果理解了，请先提供一个示例。"""
+我希望您能担任我的英文翻译、校对和编辑工作，将我即将推出的中文内容翻译成优雅、精炼且具有学术性的英文。请在保��原意不变的前提下，将简单的词汇和句子替换为更复杂、更优美的表达方式。总体���言，语言风格应类似于《美国经济评论》学术期刊。如果理解了，请先提供一个示例。"""
         },
         "中译英1": {
             "title": "中译英1",
@@ -348,7 +347,7 @@ Overhaul content framework:改变内容架构"""
 请将这段话改写，通过调整语序增减字数，替换同义词等方式，避免与原文出现连续三个字相同的句子，使这段话更加有逻辑，符合论文的规范。然后再进行扩写。最后再缩写，符合论文风格。
 """
         },
-        "关键词汇替换降重": {
+        "关键词汇��换降重": {
             "title": "关键词汇替换降重",
             "content": """Kindly replace key terms in this section with appropriate synonyms to reduce similarity and enhance originality without compromising the meaning or academic integrity.
 
@@ -366,7 +365,7 @@ Overhaul content framework:改变内容架构"""
             "title": "逻辑重组",
             "content": """Reorganize the logic of this argument by restructuring sentences and paragraphs, ensuring that the flow of ideas is coherent and distinct from the original text.
 
-请通过构句子和段落的逻辑，确保思想的流畅性并且与原文有所区别。
+请通过构句子和段落的逻辑，确保思想的流畅性并且���原文有所区别。
 """
         },
         "综合改写": {
@@ -400,7 +399,7 @@ Overhaul content framework:改变内容架构"""
         "撰写Cover letter": {
             "title": "撰写Cover letter",
             "content": """I want you to act as an academic journal editor. I will provide you with the title and abstract of my manuscript. You need to write a format cover letter for submitting the manuscript to the Nature journal. You should state that the manuscript did not consider for publication in any other journal. Briefly introduce the merit of the manuscript and provide a short summary to point out the importance of the results for a scientific audience. The title and abstract are as follows:
-我希望您能担任一名学术期刊编辑。我将为您提供我的手稿的标题和摘要。您需要为将手稿提交给《自然》杂志撰写一封格式正确的封面信。您应该声明该手稿尚未在任何其他期刊上考虑发表。简要介绍手稿的优点，并提供一些短的总结，以向科学界突出研究结果的重要性。标题和摘要如下：[XXX]"""
+我希望您能担任一名学术期刊编辑。我将为您提供我的手稿的标题和摘要。您需要为将手稿提交给《自然》杂志撰写一封格式正确的封面信。您应该声明该手稿尚未在任何其��期刊上考虑发表。简要介绍手稿的优点，并提供一些短的总结，以向科学界突出研究结果的重要性。标题和摘要如下：[XXX]"""
         },
         "解释审稿人反馈": {
             "title": "解释审稿人反馈",
@@ -457,7 +456,7 @@ def show_gpt_prompts():
                 if st.button(f"🖌️ {i}. {prompt}", key=f"polish_{i}"):
                     st.session_state.selected_prompt = prompts_content[prompt]
         
-        # ��、中英翻译指令
+        # 四、中英翻译指令
         with st.expander("🌐 四、中英翻译指令"):
             prompts = ["论文翻译", "中译英1", "中译英2", "中译英3", "中英互译"]
             for i, prompt in enumerate(prompts, 1):
@@ -475,7 +474,7 @@ def show_gpt_prompts():
         
         # 六、参考文献指令
         with st.expander("📚 六、参考文献指令"):
-            prompts = ["检查参考文献格式", "APA格式校正"]
+            prompts = ["检查参考文献格式", "APA���式校正"]
             for i, prompt in enumerate(prompts, 1):
                 if st.button(f"📚 {i}. {prompt}", key=f"ref_{i}"):
                     st.session_state.selected_prompt = prompts_content[prompt]
@@ -499,12 +498,54 @@ def show_gpt_prompts():
             
             col1, col2 = st.columns(2)
             with col1:
-                if st.button("📋 复制到剪贴板", use_container_width=True):
-                    try:
-                        pyperclip.copy(prompt_content)
-                        st.toast("✅ 已复制到剪贴板！")
-                    except Exception as e:
-                        st.error(f"复制失败：{str(e)}")
+                copy_button = f"""
+                    <button
+                        onclick="
+                            const text = `{prompt_content.replace('`', '\\').replace("'", "\\'")}`;
+`                            if (navigator.clipboard && window.isSecureContext) {{
+                                navigator.clipboard.writeText(text).then(() => {{
+                                    window.streamlitMessageListener.handleMessage({{
+                                        type: 'streamlit:showToast',
+                                        data: {{ message: '✅ 已复制到剪贴板！' }}
+                                    }});
+                                }}).catch(() => {{
+                                    fallbackCopyTextToClipboard(text);
+                                }});
+                            }} else {{
+                                fallbackCopyTextToClipboard(text);
+                            }}
+
+                            function fallbackCopyTextToClipboard(text) {{
+                                const textArea = document.createElement('textarea');
+                                textArea.value = text;
+                                textArea.style.position = 'fixed';
+                                textArea.style.top = '-9999px';
+                                textArea.style.left = '-9999px';
+                                document.body.appendChild(textArea);
+                                textArea.focus();
+                                textArea.select();
+                                try {{
+                                    document.execCommand('copy');
+                                    window.streamlitMessageListener.handleMessage({{
+                                        type: 'streamlit:showToast',
+                                        data: {{ message: '✅ 已复制到剪贴板！' }}
+                                    }});
+                                }} catch (err) {{
+                                    window.streamlitMessageListener.handleMessage({{
+                                        type: 'streamlit:showToast',
+                                        data: {{ message: '❌ 复制失败！' }}
+                                    }});
+                                }}
+                                document.body.removeChild(textArea);
+                            }}"
+                        style="width:100%;padding:0.5rem;border-radius:5px;border:1px solid #1f77b4;background-color:#ffffff;color:#1f77b4;cursor:pointer;transition:all 0.3s"
+                        onmouseover="this.style.backgroundColor='#1f77b4';this.style.color='#ffffff'"
+                        onmouseout="this.style.backgroundColor='#ffffff';this.style.color='#1f77b4'"
+                    >
+                        📋 复制到剪贴板
+                    </button>
+                """
+                st.markdown(copy_button, unsafe_allow_html=True)
             with col2:
                 if st.button("💾 保存提示词", use_container_width=True):
                     try:
