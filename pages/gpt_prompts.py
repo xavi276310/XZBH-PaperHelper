@@ -99,7 +99,7 @@ def get_prompts_content():
         "论文评审专家": {
             "title": "论文评审专家",
             "content": """You are now acting as an expert in the field of [Put professional fields here…]. From a professional point of view, do you think there is any need to modify the above content? Be careful not to modify the whole text, you need to point out the places that need to be modified one by one, and give revision opinions and recommended revision content.
-你现在扮演一个[这里放你所研究的领域] 领域的专家，从专业的角度，您认为上面些内容是否有需要修改的地方？注意，不要全文修改，您需要���出需要修改的地方，并且给出修改意见以及推荐的修改内容"""
+你现在扮演一个[这里放你所研究的领域] 领域的专家，从专业的角度，您认为上面些内容是否有需要修改的地方？注意，不要全文修改，您需要出需要修改的地方，并且给出修改意见以及推荐的修改内容"""
         },
 
         # 二、论文撰写指令
@@ -156,7 +156,7 @@ def get_prompts_content():
         "英文润色2": {
             "title": "英文润色2",
             "content": """Below is a paragraph from an academic paper. Polish the writing to meet the academic style,improve the spelling, grammar, clarity, concision and overall readability. When necessary, rewrite the whole sentence. Furthermore, list all modification and explain the reasons to do so in markdown table. Paragraph ：XXX
-以下是一篇学术论文中的段落。请润色写作符合学术风格，��高拼写、语法、清晰度、简洁性和整体可读性。如有必要，重写整个句子。此外，请在Markdown表格中列出所有修改，并解释修改的原因。段落：XXX"""
+以下是一篇学术论文中的段落。请润色写作符合学术风格，提高拼写、语法、清晰度、简洁性和整体可读性。如有必要，重写整个句子。此外，请在Markdown表格中列出所有修改，并解释修改的原因。段落：XXX"""
         },
         "中文润色": {
             "title": "中文润色",
@@ -166,7 +166,7 @@ def get_prompts_content():
         "SCI论文润色": {
             "title": "SCI论文润色",
             "content": """I am preparing my SCI paper for submission and require assistance in polishing each paragraph. Could you please refine my writing for academic rigor? I need you to correct any grammatical errors, improve sentence structure for academic suitability, and make the text more formal where necessary. For each paragraph we need to improve, you need to put all modified sentences in a Markdown table, each column contains the following: Full original sentence; Highlight the revised part of the sentence; Explain why made these changes. Finally, Rewrite the full, corrected paragraph. If you understand, please reply: yes, let’s get started.
-我正在准备我的SCI论文以便提交，需要帮助润色每段落。你能帮我提升学术严谨性吗？我需要你纠正任何语法错误，改进句子结构以适应学术要求，并在必要时使文本更加正��。于每个需要改进的段落，你需要将所有修改后的句子放在一个Markdown表格中，每一列分别包含以下内容：完整的原始句子；突出显示句子的修订部分；解释为什么做出这些更改。最后，重写整个更正后的段落。如果你理解了，请回复：是的，让我们开始吧。"""
+我正在准备我的SCI论文以便提交，需要帮助润色每段落。你能帮我提升学术严谨性吗？我需要你纠正任何语法错误，改进句子结构以适应学术要求，并在必要时使文本更加正确。于每个需要改进的段落，你需要将所有修改后的句子放在一个Markdown表格中，每一列分别包含以下内容：完整的原始句子；突出显示句子的修订部分；解释为什么做出这些更改。最后，重写整个更正后的段落。如果你理解了，请回复：是的，让我们开始吧。"""
         },
         "期刊会议风格": {
             "title": "期刊会议风格",
@@ -191,7 +191,7 @@ def get_prompts_content():
         },
         "错误纠正": {
             "title": "错误纠正",
-            "content": """如果ChatGPT理解错了你的问题，可以给它一个误的反馈，让它重新回���
+            "content": """如果ChatGPT理解错了你的问题，可以给它一个误的反馈，让它重新回答。
 
 Prompt: Note that it is not ….., but ….. Re-answer the previous question based on what I have added.
 注意，不是…而是… 请根据我的补充，重新回答上个问题"""
@@ -239,7 +239,7 @@ I have used a passive voice in this sentence. Consider using an active voice ins
         "修改意见": {
             "title": "修改意见",
             "content": """I started to write an academic paper, the title is XXXXX, now I have finished the introduction part, but I am not sure whether it is suitable, can you help me to read it, and put forward detailed and specific revision suggestions?
-我开始写论文了，题目是XXXXX，现在我完���了引言部分，但是不确定是否合适，你能帮我看一下，并提出详细具体的修改意见吗？"""
+我开始写论文了，题目是XXXXX，现在我完成了引言部分，但是不确定是否合适，你能帮我看一下，并提出详细具体的修改意见吗？"""
         },
         "封装基本事实/原理/背景": {
             "title": "封装基本事实/原理/背景",
@@ -268,7 +268,7 @@ Polish and rewrite the above content to make it more in line with the style of a
 更连贯的表达(More coherent)：确保句子的组织性良好，逻辑流畅。
 保持风格一致(More consistent)：确保用词和语调与整篇论文保持一致。
 符合学术风格(More academic)：运用正确的学术用语如“moreover”和“consequently”。
-规范语法(More formal grammar)：使用正确的语法或句法，避免��句不完整或偏离主题。
+规范语法(More formal grammar)：使用正确的语法或句法，避免语句不完整或偏离主题。
 深化细节描绘(More nuanced)：使用精准的词汇和短语描述复杂或微妙的概念，使句子更加细化。
 Make nuanced adjustments:对文本进行微调
 lmplement marginal modifications:进行边际性修改
@@ -286,7 +286,7 @@ Overhaul content framework:改变内容架构"""
         "论文翻译": {
             "title": "论文翻译",
             "content": """I would like you to serve as an English translator, proofreader, and editor to translate my upcoming Chinese content into elegant, refined, and academic English. Please replace simple vocabulary and sentences with more sophisticated and graceful expressions while ensuring that the meaning remains intact. Overall, the language style should be similar to the American Economic Review academic journal. If you understand, please provide an example first.
-我希望您能担任我的英文翻译、对和编辑工作，��我即将推出的中文内容翻译成优雅、精炼且具有学术性的英文。请在保持原意不变的前提下，将简单的词汇和句子替换为更复杂、更优美的表达方式。总体而言，语言风格应类似于《美国经济评论》学术期刊。如果您理解了，请先提供一个示例。"""
+我希望你能担任我的英文翻译、校对和编辑工作，将我即将发布的中文内容翻译成优雅、精炼、学术化的英文。请在保持原意不变的前提下，将简单的词汇和句子替换为更复杂、更优美的表达方式。总体而言，语言风格应类似于《美国经济评论》学术期刊。如果您理解了，请先提供一个示例。"""
         },
         "中译英1": {
             "title": "中译英1",
@@ -314,7 +314,7 @@ Overhaul content framework:改变内容架构"""
             "title": "内容降重",
             "content": """I would like you to act as an expert in the [field of your choice], and help students with plagiarism check for their papers. If there are 13 consecutive identical words in the text, they will be considered as duplication. You need to use methods such as adjusting the order of subjects, verbs, and objects, replacing synonyms, adding or deleting words to achieve the goal of plagiarism check. Please modify the following paragraph:
 
-我想让你充当一位[你希望的某个]领域的专家帮助学生进行��文的去重修改。如果文章中连续13个字一样，就算重复。你需要通过调整主谓宾语序替换同义词、增减字数等方法，来达到论文去重的目的。请你修改下面这段文字：
+我想让你充当一位[你希望的某个]领域的专家帮助学生进行论文的去重修改。如果文章中连续13个字一样，就算重复。你需要通过调整主谓宾语序替换同义词、增减字数等方法，来达到论文去重的目的。请你修改下面这段文字：
 """
         },
         "改写降重": {
@@ -328,7 +328,7 @@ Overhaul content framework:改变内容架构"""
             "title": "同义词替换降重",
             "content": """Please assist me in reorganizing the following sentence by adjusting its logical structure, employing active and passive voice interchange, synonym replacement, and paraphrasing with near-synonyms to rewrite the sentence. Additionally, break down complex sentences and reduce repetition. Provide only the corrected version of the text.
 
-请帮我把下面句子重新组织通过调整句子逻辑，利用主动动替换，��义词替换，近义词替换来改写句子，同时分解长句，减少重复，请只提供文本的更正版本。
+请协助我通过调整逻辑结构，交替使用主动和被动语态，替换同义词，并用近义词进行意译，重新组织以下句子。此外，请拆分复杂句子并减少重复。只提供修改后的文本。
 """
         },
         "避免连续相同": {
@@ -342,7 +342,7 @@ Overhaul content framework:改变内容架构"""
             "title": "缩写扩写降重",
             "content": """Please rewrite this passage by adjusting the order of words, increasing or decreasing the number of words, and substituting synonyms to avoid any sequence of three consecutive words that match the original text. Ensure that the revised passage is more logical and adheres to the standards of academic writing. Then, expand upon the content. Finally, condense it to fit the style of an academic paper.
 
-请将这段话改写，通过调整语序增减字数，替换���义词等方式，避免与原文出现连续三个字相同的句子，使这段话更加有逻辑，符合论文的规范。然后再进行扩写。最后再缩写，符合论文风格。
+请将这段话改写，通过调整语序增减字数，替换同义词等方式，避免与原文出现连续三个字相同的句子，使这段话更加有逻辑，符合论文的规范。然后再进行扩写。最后再缩写，符合论文风格。
 """
         },
         "关键词汇替换降重": {
@@ -385,7 +385,7 @@ Overhaul content framework:改变内容架构"""
         "检查参考文献格式": {
             "title": "检查参考文献格式",
             "content": """I’d like you to serve as a reference editor for a research manuscript. I will supply you with five reference templates that you should use as guidelines. Following that, I will provide additional references for which you’ll need to examine formatting aspects such as punctuation placement and spacing. It is essential that the provided references align cohesively with the five initial templates. Provide me with any necessary corrections or suggestions for improve the text. Give a markdown table with three columns where the first is the original text, second is the fixed text, explanation in the third column, and then provide all fixed references. Below are the five example templates and references needed to be fixed:
-我希望您能担任一篇研究手稿的参考文献编辑。我将为您提供五个参考文献模板，您应该将其作为指导方针使用。之后，我将提供额外的参考文献，需要检查诸如标点符号位置和间距等格式方面的问题。所提供的参考文献必须与最初的五个模板保持一致性。请向我提供任何必要的修正建议或改进文本的建议。请提供一个Markdown表格，表格有三列，第一列是原文，第二列是更正后的文本，第��列是解释，然后提供所有已更正的参考文献。以下是五个示例模板和需要更正的参考文献："""
+我希望您能担任一篇研究手稿的参考文献编辑。我将为您提供五个参考文献模板，您应该将其作为指导方针使用。之后，我将提供额外的参考文献，需要检查诸如标点符号位置和间距等格式方面的问题。所提供的参考文献必须与最初的五个模板保持一致性。请向我提供任何必要的修正建议或改进文本的建议。请提供一个Markdown表格，表格有三列，第一列是原文，第二列是更正后的文本，第三列是解释，然后提供所有已更正的参考文献。以下是五个示例模板和需要更正的参考文献："""
         },
         "APA格式校正": {
             "title": "APA格式校正",
@@ -417,7 +417,7 @@ def show_gpt_prompts():
     prompts_content = get_prompts_content()
 
     # 使用自定义样式的标题
-    st.markdown('<h1 class="main-title">�� 学术论文写作 GPT 提示词</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-title">学术论文写作 GPT 提示词</h1>', unsafe_allow_html=True)
 
     # 添加提醒信息
     st.info("⚠️ ps：GPT虽强但只是辅助，关键问题一定要自己斟酌之后再找其辅助")
