@@ -23,4 +23,4 @@ def show_personal_page():
 
     # 说明文字加粗、放大
     # 通过 Markdown 语法可以加粗和增加文字大小
-    st.markdown("<h3 style='font-size:20px; font-weight: bold;'>也可以扫码了解课程哦</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='font-size:20px; font-weight: bold;'>也可以扫码了解课程哦，性价比嘎嘎高！</h3>", unsafe_allow_html=True)
