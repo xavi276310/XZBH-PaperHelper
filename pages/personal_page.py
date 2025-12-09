@@ -15,3 +15,7 @@ def show_personal_page():
     st.markdown("这是我的其中两个有关模块缝合的视频链接：")
     st.markdown("- [模块缝合视频 1](https://www.bilibili.com/video/BV1zg4y1C7oP/)")
     st.markdown("- [模块缝合视频 2](https://www.bilibili.com/video/BV1Kw411G7Rw)")
+
+
+    # 添加本地图片
+    st.image("G:/D/Graduate-materials/B站合集封面/小店升级/tupian.jpg", caption="也可以扫码了解课程哦", use_column_width=True)
