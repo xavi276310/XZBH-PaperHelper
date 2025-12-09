@@ -19,7 +19,7 @@ def show_personal_page():
 
      # 引用图片并放大1.5倍
     # 你可以指定图片宽度，例如将宽度设置为原来1.5倍
-    st.image("tupian.jpg", caption="**也可以扫码了解课程哦**", use_column_width=False, width=900)  # 这里的 900 是自定义宽度，可以根据需要调整
+    st.image("tupian.jpg", caption="", use_column_width=False, width=900)  # 这里的 900 是自定义宽度，可以根据需要调整
 
     # 说明文字加粗、放大
     # 通过 Markdown 语法可以加粗和增加文字大小
