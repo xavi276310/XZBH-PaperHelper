@@ -18,4 +18,4 @@ def show_personal_page():
 
 
     # 添加本地图片
-    st.image("G:/D/Graduate-materials/B站合集封面/小店升级/tupian.jpg", caption="也可以扫码了解课程哦", use_column_width=True)
+    st.image("tupian.jpg", caption="也可以扫码了解课程哦", use_column_width=True)
